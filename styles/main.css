@@ -1,5 +1,14 @@
+:root {
+    --font_main: "Outfit", sans-serif;
+    --font_secondary: "DM Mono", monospace;
+    --col-text_main: #000000;
+    --col-text_bright: #ffffff;
+    --col-accent_1: #F5DA82;
+    --col-accent_2: #996399;
+}
+
 *, *::before, *::after {
-    font-family: sans-serif;
+    font-family: var(--font_main);
     box-sizing: border-box;
 }
 
@@ -37,4 +46,7 @@
 
 .fieldset--hide {
     display: none;
+}
+h2 {
+    font-family: var(--font_secondary);
 }
