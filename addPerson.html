@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add person</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h2>add / edit person</h2>
+    </header>
+    <label for="person__type">type</label>
+            <select name="" id="person__select">
+                <option value="physician">physician</option>
+                <option value="caregiver">caregiver</option>
+                <option value="relative">relative</option>
+                <option value="patient">patient</option>
+            </select>
+    <section>
+        <form id="person__form">
+
+            <fieldset id="person__input">
+                <legend>person</legend>
+                <section>
+                    <img id="person__img" src="" alt="">
+                </section>
+                <section>
+                    <p>
+                        <label for="personId">person ID</label>
+                        <input type="number" name="personId" id="personId" required/>
+                    </p>
+                    <p>
+                        <label for="title">title</label>
+                        <select name="title" id="title">
+                            <option value=""></option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="MD.">MD.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Dr. med.">Dr. med.</option>
+                            <option value="Prof. Dr. med.">Prof. Dr. med.</option>
+                            <option value="Priv.-Doz. Dr. med.">Priv.-Doz. Dr. med.</option>
+                            <option value="Dipl.-Psych">Dipl.-Psych</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="firstName">first name</label>
+                        <input type="text" name="firstName" id="firstName" required/>
+                    </p>
+                    <p>
+                        <label for="middleName">middle name</label>
+                        <input type="text" name="middleName" id="middleName">
+                    </p>
+                    <p>
+                        <label for="lastName">last name</label>
+                        <input type="text" name="lastName" id="lastName" required/>
+                    </p>
+                    <p>
+                        <label for="dateOfBirth">date of birth</label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth"/>
+                    </p>
+                </section>
+            </fieldset>
+            <fieldset id="person__address">
+                <legend>address</legend>
+                <p>
+                    <label for="address__institution">institution</label>
+                    <input type="text" name="address__institution" id="address__institution"/>
+                </p>
+                <p>
+                    <label for="address__street">street</label>
+                    <input type="text" name="address__street" id="address__street"/>
+                </p>
+                <p>
+                    <label for="address__city">city</label>
+                    <input type="text" name="address__city" id="address__city"/>
+                </p>
+                <!-- change to country specific zipcode -->
+                <p>
+                    <label for="address__zipcode">zipcode</label>
+                    <input type="text" name="address__zipcode" id="address__zipcode"/>
+                </p>
+                <!-- change to country list -->
+                <p>
+                    <label for="address__country">country</label>
+                    <input type="text" name="address__country" id="address__country" value="Germany"/>
+                </p>
+            </fieldset>
+            <fieldset id="person__expertise">
+                <legend>expertise</legend>
+                <p>
+                    <label for="expertise__function">function</label>
+                    <input type="text" name="expertise__function" id="expertise__function"/>
+                </p>
+                <p>
+                    <label for="expertise__topics">topics</label>
+                    <input type="text" name="expertise__topics" id="expertise__topics"/>
+                </p>
+                <p>
+                    <label for="expertise__research">research</label>
+                    <input type="text" name="expertise__research" id="expertise__research"/>
+                </p>
+                <p>
+                    <table>
+                        <thead>
+                            <!-- change to topics regarding patient - maybe global topic list in DB -->
+                            <tr>
+                                <td>ME/CFS</td>
+                                <td>MCAS</td>
+                                <td>POTS</td>
+                                <td>ICC</td>
+                                <td>Tethered Cord</td>
+                                <td>Fibro</td>
+                                <td>rare disease</td>
+                                <td>long covid</td>
+                                <td>hEDS</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="check__MECFS" id="check__MECFS"></td>
+                                <td><input type="checkbox" name="check__MCAS" id="check__MCAS"></td>
+                                <td><input type="checkbox" name="check__POTS" id="check__POTS"></td>
+                                <td><input type="checkbox" name="check__ICC" id="check__ICC"></td>
+                                <td><input type="checkbox" name="check__TetheredCord" id="check__TetheredCord"></td>
+                                <td><input type="checkbox" name="check__Fibro" id="check__Fibro"></td>
+                                <td><input type="checkbox" name="check__rareDisease" id="check__rareDisease"></td>
+                                <td><input type="checkbox" name="check__longCovid" id="check__longCovid"></td>
+                                <td><input type="checkbox" name="check__hEDS" id="check__hEDS"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </fieldset>
+            <fieldset id="person__contact">
+                <legend>contact</legend>
+                <p>
+                    <label for="contact__email">e-mail</label>
+                    <input type="email" name="contact__email" id="contact__email"/>
+                </p>
+                <p>
+                    <label for="contact__phone1">phone [primary]</label>
+                    <input type="tel" name="contact__phone1" id="contact__phone1"/>
+                </p>
+                <p>
+                    <label for="contact__phone2">phone [secondary]</label>
+                    <input type="tel" name="contact__phone2" id="contact__phone2"/>
+                </p>
+                <p>
+                    <label for="contact__social1">social</label>
+                    <input type="url" name="contact__social1" id="contact__social1"/>
+                </p>
+                <p>
+                    <label for="contact__social2">social</label>
+                    <input type="url" name="contact__social2" id="contact__social2"/>
+                </p>
+                <p>
+                    <label for="contact__link1">link</label>
+                    <input type="url" name="contact__link1" id="contact__link1"/>
+                </p>
+                <p>
+                    <label for="contact__link2">link</label>
+                    <input type="url" name="contact__link2" id="contact__link2"/>
+                </p>
+            </fieldset>
+            <fieldset id="person__misc">
+                <legend>misc</legend>
+                <p>
+                    <label for="misc_asscociated">contact via / recommended by</label>
+                    <input type="text" name="misc_asscociated" id="misc_asscociated"/>
+                </p>
+                <p>
+                    <!-- change to select with all entrys from DB -->
+                    <label for="misc_related">related to</label>
+                    <input type="text" name="misc_related" id="misc_related"/>
+                </p>
+                <p>
+                    <label for="misc__notes">notes</label>
+                    <textarea type="text" name="misc__notes" id="misc__notes"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <input type="button" value="save" id="submit" />
+            </p>
+        </form>
+    </section>
+    <script src="/js/persons.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#person__form label {
+    width: 140px;
+    display: inline-block;
+    text-align: right;
+}
+
+#person__input {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+#person__img {
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#person__expertise table,
+#person__expertise td {
+    padding: .5rem;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.fieldset--show {
+    display: block;
+}
+
+.fieldset--hide {
+    display: none;
+}

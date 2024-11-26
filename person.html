@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manageME person</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <section>
+        <form id="person__form">
+            <fieldset>
+                <legend>person</legend>
+
+                <p>
+                    <label for="firstName">first name</label>
+                    <input type="text" name="firstName" id="firstName" required/>
+                </p>
+                <p>
+                    <label for="middleName">middle name</label>
+                    <input type="text" name="middleName" id="middleName">
+                </p>
+                <p>
+                    <label for="lastName">last name</label>
+                    <input type="text" name="lastName" id="lastName" required/>
+                </p>
+                <p>
+                    <label for="dateOfBirth">date of birth</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" required/>
+                </p>
+                <p>
+                    <input type="button" value="save" id="submit" />
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <script src="/js/person.js"></script>
+</body>
+</html>
