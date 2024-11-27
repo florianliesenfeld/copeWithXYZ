@@ -1,0 +1,70 @@
+:root {
+    --font_main: "Outfit", sans-serif;
+    --font_secondary: "DM Mono", monospace;
+    --col-text_main: #000000;
+    --col-text_bright: #ffffff;
+    --col-accent_1: #F5DA82;
+    --col-accent_2: #996399;
+}
+
+*, *::before, *::after {
+    font-family: var(--font_main);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--col-accent_1);
+    height: 100vh;
+}
+
+h2 {
+    font-family: var(--font_secondary);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+a {
+    color: var(--col-accent_2);
+}
+.placeholder {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.placeholder h1 {
+    font-size: 2rem;
+    position: relative;
+}
+
+.placeholder__body {
+    padding: 1rem 0;
+    /* display: flex;
+    width: 100%; */
+}
+
+.url__ending {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition: .75s;
+}
+
+.url__ending--down {
+    bottom: -2rem;
+    opacity: 0;
+}
+
+.url__ending--middle {
+    bottom: 0;
+    opacity: 1;
+}
+
+.url__ending--up {
+    bottom: 2rem;
+    opacity: 0;
+}
