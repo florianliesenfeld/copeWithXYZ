@@ -20,3 +20,6 @@ function changeEnding() {
     urlEnding.classList.toggle("url__ending--up");
     i++;
 }
+
+// use setTimout to execute change after certain seconds
+// setTimeout()
